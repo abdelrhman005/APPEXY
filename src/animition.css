@@ -1,0 +1,28 @@
+@keyframes jump {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+
+    }
+}
+
+.jump {
+    animation: jump 1s infinite ease-in-out;
+
+}
+
+.bullet {
+    height: 60px;
+    border-radius: 12px;
+}
+.bullet:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+}
